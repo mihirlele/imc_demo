@@ -10,7 +10,7 @@ metadata:
   namespace: clusterresourceoverride-operator
 spec:
   targetNamespaces:
-    - clusterresourceoverride-operator
+  - clusterresourceoverride-operator
 #---
 #apiVersion: operator.autoscaling.openshift.io/v1
 #kind: ClusterResourceOverride
