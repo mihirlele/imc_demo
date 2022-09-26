@@ -1,0 +1,13 @@
+apiVersion: machineconfiguration.openshift.io/v1
+kind: ContainerRuntimeConfig
+metadata:
+ name: overlay-size
+spec:
+ machineConfigPoolSelector:
+   matchLabels:
+     pools.operator.machineconfiguration.openshift.io/worker: '' 
+ containerRuntimeConfig: 
+   pidsLimit: 2048
+   logLevel: debug
+   overlaySize: 8G
+   logSizeMax: "-1"
